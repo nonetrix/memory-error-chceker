@@ -13,7 +13,8 @@ int main() {
 	std::cin >> passes;
 	std::cout << "How many GBs of memory should it allocate eatch time?" << std::endl;
 	std::cin >> gigabytes;
-	num_of_ints = ((256*1024)*1024)*gigabytes;
+        //268435456 4 byte ints can fit in a gigabyte so you can just multiply that
+	num_of_ints = 268435456*gigabytes;
 
 	for (int i = 0; i < passes; i++) {
 		for(int i = 0; i < num_of_ints; i++) {
