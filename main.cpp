@@ -34,6 +34,7 @@ int main() {
 
 		std::cout << "pass: " << i + 1 << " vaild: " << vaild << " invaild: " << invaid << std::endl;
 		a.clear();
+		a.shrink_to_fit();
 		vaild = 0;
 		invaid = 0;
 	}
